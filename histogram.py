@@ -66,7 +66,7 @@ for i in raspileblanc.Pressure:
 raspres = raspres/(len(raspileblanc.Pressure) + len(raspistcere.Pressure))
 
 
-labels = ["Température (en °C)", "Humidité (en %)", "Pression (en x10 Pa)"]
+labels = ["Température (en °C)", "Humidité (en %)", "Pression (en 10e-1 Pa)"]
 width = 0.35
 
 fig, ax = plt.subplots()
