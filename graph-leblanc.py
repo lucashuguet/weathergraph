@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-officiel = pd.read_csv("leblanc-officiel-25avril29avril.csv", delimiter=";")
-raspi = pd.read_csv("leblanc-raspi-25avril29avril.csv", delimiter=";")
+officiel = pd.read_csv("csv/leblanc-officiel-25avril29avril.csv", delimiter=";")
+raspi = pd.read_csv("csv/leblanc-raspi-25avril29avril.csv", delimiter=";")
 
 fig, (ax1, ax2) = plt.subplots(2, 1)
 
@@ -65,4 +65,4 @@ fig.set_figwidth(16)
 fig.set_figheight(9)
 fig.suptitle("Données météorologiques de Le Blanc, du 25 au 29 avril 2022", fontsize="xx-large")
 
-plt.savefig("leblanc.svg")
+plt.savefig("img/leblanc.svg")

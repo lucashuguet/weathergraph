@@ -90,4 +90,4 @@ fig.tight_layout()
 fig.set_figwidth(16)
 fig.set_figheight(9)
 
-plt.savefig("img/histogram.png")
+plt.savefig("img/histogram.svg")
