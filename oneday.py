@@ -40,20 +40,20 @@ for i in range(len(officiel.Time)):
 
 ax1.plot(t, offtemp, label="Température (en °C)")
 ax1.plot(t, offhumi, label="Humidité (en %)")
-ax1.plot(t, offpres, label="Pression (en Pa)")
+ax1.plot(t, offpres, label="Pression (en kPa)")
 ax1.set_xlabel("Temps (en heures)")
 ax1.set_title("Observations météorologiques de Météo France")
 ax1.grid(True)
 
 ax2.plot(t, rastemp, label="Température (en °C)")
 ax2.plot(t, rashumi, label="Humidité (en %)")
-ax2.plot(t, raspres, label="Pression (en Pa)")
+ax2.plot(t, raspres, label="Pression (en kPa)")
 ax2.set_xlabel("Temps (en heures)")
 ax2.set_title("Mesures de notre Station Météo")
 ax2.grid(True)
 
 fig.tight_layout()
-fig.legend(["Température (en °C)", "Humidité (en %)", "Pression (en Pa)"])
+fig.legend(["Température (en °C)", "Humidité (en %)", "Pression (en kPa)"])
 fig.set_figwidth(16)
 fig.set_figheight(9)
 fig.suptitle("Observations météorologiques de Le Blanc, le 27 avril 2022", fontsize="xx-large")

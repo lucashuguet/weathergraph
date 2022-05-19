@@ -66,7 +66,7 @@ for i in raspileblanc.Pressure:
 raspres = raspres/(len(raspileblanc.Pressure) + len(raspistcere.Pressure))
 
 
-labels = ["Température (en °C)", "Humidité (en %)", "Pression (en 10e-1 Pa)"]
+labels = ["Température (en °C)", "Humidité (en %)", "Pression (en kPa)"]
 width = 0.35
 
 fig, ax = plt.subplots()
@@ -79,7 +79,7 @@ rects1 = ax.bar(x - width/2, off, width, label='Météo France')
 rects2 = ax.bar(x + width/2, ras, width, label='Station Météo Maison')
 
 ax.set_ylabel('Mesures')
-ax.set_title('Moyennes sur deux semaines de mesures')
+ax.set_title('Moyennes sur deux semaines de mesure')
 ax.set_xticks(x, labels)
 ax.legend()
 
